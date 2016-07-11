@@ -1,22 +1,18 @@
-'use strict';
+import angular from 'angular';
 
-var angular = require('angular');
-var _ = require('lodash');
-
-var app = angular.module('app', ['ng']);
+const app = angular.module('app', ['ng']);
 window.APP_VERSION = APP_VERSION;
 
 // Allow services, factories, etc. to add dependencies
 // asynchronously
 app.addModules = function(_modules) {
-
-  var modules = _modules;
-  if (!_.isArray(modules)) {
+  let modules = _modules;
+  if (!Array.isArray(modules)) {
     modules = [modules];
   }
 
-  _.forEach(modules, function(module) {
-    var contains = _.contains(app.requires, module);
+  modules.forEach(module => {
+    let contains = app.requires.includes(module);
     if (!contains) {
       app.requires.push(module);
     }
@@ -24,4 +20,4 @@ app.addModules = function(_modules) {
 
 };
 
-module.exports = app;
+export default app;

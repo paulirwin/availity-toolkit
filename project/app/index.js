@@ -1,48 +1,19 @@
-'use strict';
-
-require('./index.less');
-
-require('jquery');
-require('angular');
-require('availity-angular');
-
-var app = require('./module');
-var registration = require('./registration');
+import './index.less';
+import 'jquery';
+import 'angular';
+import 'availity-angular';
+import app from './module';
+import './registration';
 
 app.addModules([
   'availity',
   'availity.ui',
-  'availity.ui.templates',
   'ui.router',
   'ng.shims.placeholder'
 ]);
 
-app.controller('PageController', function($scope, AvModal, AV_GLOBALS) {
-
-  var reg = {
-    name: null,
-    selectedState: null,
-    date: null,
-    states: AV_GLOBALS.REGIONS,
-    onShow: function() {
-      AvModal.create({
-        scope: $scope,
-        templateUrl: 'registration/templates/notification.html',
-        show: true
-      });
-
-    }
-  };
-
-  reg.selectedState = reg.states[0];
-
-  $scope.reg = reg;
-
-});
-
-app.config(function($stateProvider, $urlRouterProvider, avValProvider) {
-
-  var defaultRules = {
+app.config(function($urlRouterProvider, avValProvider) {
+  const defaultRules = {
     'name': {
       'required': {
         'message': 'Your name is required.'
@@ -68,16 +39,8 @@ app.config(function($stateProvider, $urlRouterProvider, avValProvider) {
     'default': defaultRules
   });
 
-  $stateProvider
-    .state('registration', {
-      url: '/',
-      template: registration.TEMPLATES.PAGE,
-      controller: 'PageController'
-    });
-
   $urlRouterProvider.otherwise('/');
-
 });
 
-module.exports = app;
+export default app;
 

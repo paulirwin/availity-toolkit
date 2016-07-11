@@ -2,24 +2,21 @@
 
 'use strict';
 
-var app = require('../service');
+require('../service');
 
 describe('registration', function() {
+  beforeEach(angular.mock.module('app'));
 
-  var registrationService;
-
-  beforeEach(angular.mock.module(app.name));
-
-  beforeEach(angular.mock.inject(function(_registrationService_) {
-    registrationService = _registrationService_;
+  beforeEach(inject((registrationService) => {
+    this.registrationService = registrationService;
   }));
 
-  it('should be defined', function() {
-    expect(registrationService.hello).toBeDefined();
+  it('should be defined', () => {
+    expect(this.registrationService.hello).toBeDefined();
   });
 
-  it('should say hi', function() {
-    expect(registrationService.hello()).toBe('hi');
+  it('should say hi', () => {
+    expect(this.registrationService.hello()).toBe('hi');
   });
 
 });

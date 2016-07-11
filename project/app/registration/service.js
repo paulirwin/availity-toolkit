@@ -1,17 +1,11 @@
-'use strict';
+import app from '../module';
 
-require('jquery');
-require('angular');
-require('availity-angular');
-
-var app = require('../module');
-
-app.service('registrationService', function() {
-
-  this.hello = function() {
+class RegistrationService {
+  hello () {
     return 'hi';
-  };
+  }
+}
 
-});
+app.service('registrationService', RegistrationService);
 
-module.exports = app;
+export default app;

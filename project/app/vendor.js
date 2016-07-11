@@ -1,28 +1,24 @@
-'use strict';
-
 // jquery
-require('jquery');
-require('bootstrap');
-require('availity-uikit');
-require('select2');
-require('velocity');
-require('moment');
-require('bootstrap-datepicker');
-require('jquery.inputmask');
+import 'jquery';
+import 'bootstrap';
+import 'availity-uikit';
+import 'select2';
+import 'velocity-animate';
+import 'moment';
+import 'bootstrap-datepicker';
+import 'jquery.inputmask';
 
 // utils
-require('lodash');
-require('tracekit');
+import 'tracekit';
 
 // angular
-require('angular');
-require('angular-sanitize');
-require('angular-ui-router');
-require('angular-shims-placeholder');
+import 'angular';
+import 'angular-sanitize';
+import 'angular-ui-router';
+import 'angular-shims-placeholder';
 
 // availity
-require('availity-angular');
+import 'availity-angular';
 
 // css
-require('angular/angular-csp.css');
-
+import 'angular/angular-csp.css';
