@@ -26,7 +26,7 @@ app.config(function($urlRouterProvider, avValProvider) {
     },
     'date': {
       'required': {
-        'message': 'Date of service is required.'
+        'message': 'Date of Birth is required.'
       },
       'dateFormat': {
         'format': 'MM/DD/YYYY',

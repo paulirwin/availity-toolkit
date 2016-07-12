@@ -41,6 +41,6 @@
     "availity-workflow": "^2.0.0",
     "cross-env": "1.0.7",
     "eslint": "1.5.1",
-    "eslint-config-availity": "^1.0.1"
+    "eslint-config-availity": "^2.0.0-beta.10"
   }
 }
