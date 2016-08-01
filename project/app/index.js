@@ -1,7 +1,9 @@
+
 import './index.less';
 import 'jquery';
 import 'angular';
 import 'availity-angular';
+
 import app from './module';
 import './registration';
 
@@ -13,24 +15,25 @@ app.addModules([
 ]);
 
 app.config(function($urlRouterProvider, avValProvider) {
+
   const defaultRules = {
-    'name': {
-      'required': {
-        'message': 'Your name is required.'
+    name: {
+      required: {
+        message: 'Your name is required.'
       },
-      'size': {
-        'min': 2,
-        'max': 10,
-        'message': 'Your name must be between 2 and 10 characters.'
+      size: {
+        min: 2,
+        max: 10,
+        message: 'Your name must be between 2 and 10 characters.'
       }
     },
-    'date': {
-      'required': {
-        'message': 'Date of Birth is required.'
+    date: {
+      required: {
+        message: 'Date of Birth is required.'
       },
-      'dateFormat': {
-        'format': 'MM/DD/YYYY',
-        'message': 'Format needs to be MM/DD/YYYY'
+      dateFormat: {
+        format: 'MM/DD/YYYY',
+        message: 'Format needs to be MM/DD/YYYY'
       }
     }
   };

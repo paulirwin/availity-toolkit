@@ -1,23 +1,20 @@
-import 'babel-polyfill';
-
-// jquery
 import 'jquery';
 import 'bootstrap';
 import 'availity-uikit';
-import 'select2';
-import 'velocity-animate';
 import 'moment';
+import 'select2';
 import 'bootstrap-datepicker';
-import 'jquery.inputmask';
-
-// utils
+import 'velocity-animate';
+import 'velocity-animate/velocity.ui';
 import 'tracekit';
-
-// angular
+import 'lodash';
 import 'angular';
 import 'angular-sanitize';
+import 'angular-animate';
 import 'angular-ui-router';
 import 'angular-shims-placeholder';
+import 'angular-ui-mask';
+
 
 // availity
 import 'availity-angular';
