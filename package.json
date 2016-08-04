@@ -36,10 +36,21 @@
     "integration": "cross-env NODE_ENV=integration gulp av:release"
   },
   "devDependencies": {
-    "availity-workflow": "1.2.11",
+    "availity-workflow": "file:../availity-workflow",
     "cross-env": "1.0.7",
     "eslint": "1.5.1",
     "eslint-config-availity": "^1.0.1",
     "gulp": "3.9.1"
+  },
+  "dependencies": {
+    "availity-uikit": "file:../availity-uikit",
+    "bootstrap": "^3.3.4",
+    "bootstrap-datepicker": "^1.6.1",
+    "jquery": "^2.2.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-router": "^2.6.1",
+    "select2": "^4.0.3",
+    "velocity-animate": "^1.2.3"
   }
 }

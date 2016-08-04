@@ -156,9 +156,8 @@ We encourage you to organize your project using feature folders and dashes **`-`
 |    |    │   ├── users-directive.js
 |    |    │   ├── users-controller.js
 |    |    |   └── order-service.js
-|    |    ├── index.js
+|    |    ├── index.jsx
 |    |    ├── vendor.js
-|    |    ├── module.js
 |    |    ├── index.html
 ```
 
