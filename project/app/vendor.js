@@ -8,7 +8,7 @@ import 'select2';
 import 'velocity-animate';
 import 'moment';
 import 'bootstrap-datepicker';
-import 'jquery.inputmask';
+//import 'jquery.inputmask';
 
 // utils
 import 'tracekit';

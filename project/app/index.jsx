@@ -13,6 +13,6 @@ ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={Registration} />
   </Router>
-), document.getElementById("app-mount-point"));
+), document.getElementById("root"));
 
 
