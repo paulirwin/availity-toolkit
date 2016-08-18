@@ -1,17 +1,17 @@
-'use strict';
+import 'babel-polyfill';
 
 // jquery
-
-require('jquery');
-require('bootstrap');
-require('availity-uikit/dist/css/availity-uikit.css');
-require('select2');
-require('velocity-animate');
-require('moment');
-require('bootstrap-datepicker');
-// require('jquery.inputmask');
+import 'jquery';
+import 'bootstrap';
+import 'availity-uikit';
+import 'select2';
+import 'velocity-animate';
+import 'moment';
+import 'bootstrap-datepicker';
+import 'jquery.inputmask';
 
 // utils
+import 'tracekit';
 
 
 // css

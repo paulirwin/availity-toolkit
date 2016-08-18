@@ -1,12 +1,13 @@
 {
   "name": "availity-toolkit",
   "version": "1.0.0",
-  "avVersion": "1.0.12",
+  "avVersion": "2.0.0-beta.0",
   "description": "Toolkit for Angular apps on the Availity platform.",
   "private": true,
   "author": "Robert McGuinness <rob.mcguinness@availity.com>",
   "engines": {
-    "node": ">=0.10.x"
+    "node": ">=5.0.0",
+    "npm": "^3.0.0"
   },
   "license": "MIT",
   "repository": {
@@ -39,7 +40,7 @@
     "availity-workflow": "file:../availity-workflow",
     "cross-env": "1.0.7",
     "eslint": "1.5.1",
-    "eslint-config-availity": "^1.0.1"
+    "eslint-config-availity": "^2.0.0-beta.10"
   },
   "dependencies": {
     "availity-uikit": "file:../availity-uikit",
