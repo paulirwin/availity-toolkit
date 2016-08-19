@@ -2,6 +2,9 @@
 
 import React from "react"
 
+import Form from "../availity-react/validation/Form.jsx";
+import Input from "../availity-react/validation/Input.jsx";
+
 import Notice from "./components/Notice.jsx"
 
 export default class Registration extends React.Component {
@@ -25,7 +28,7 @@ export default class Registration extends React.Component {
         <span className="app-icon-title">h1. Application Title</span>
       </h1>
 
-      <form className="form" name="demoForm">
+      <Form className="form" name="demoForm">
         <div className="panel panel-card">
           <div className="panel-body">
             <div className="container-fluid">
@@ -44,11 +47,15 @@ export default class Registration extends React.Component {
                     What's this?
                   </span>
                     </label>
-                    <input
+                    <Input
                       type="text"
                       className="form-control"
                       id="name"
-                      placeholder="Enter 1 letter to see validation in action" />
+                      name="name"
+                      placeholder="Enter 1 letter to see validation in action"
+                      validations="isLength:2"
+                      validationError="Name must be at least 2 characters."
+                    />
 
                   </div>
 
@@ -68,7 +75,7 @@ export default class Registration extends React.Component {
                       className="form-control select2"
                       data-placeholder="Select State"
                       data-allow-clear="true">
-                      <option value="" />
+                      <option value=""/>
                     </select>
                   </div>
 
@@ -85,9 +92,9 @@ export default class Registration extends React.Component {
             className="btn btn-info">
             Show
           </button>
-          <input type="submit" className="btn btn-primary form-controls-right" value="Next" />
+          <input type="submit" className="btn btn-primary form-controls-right" value="Next"/>
         </div>
-      </form>
+      </Form>
 
       <Notice />
 

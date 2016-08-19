@@ -55,6 +55,7 @@
     "react-router": "^2.6.1",
     "select2": "^4.0.3",
     "tracekit": "^0.4.3",
+    "validator": "^5.5.0",
     "velocity-animate": "^1.2.3"
   }
 }
