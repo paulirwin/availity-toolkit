@@ -1,11 +1,11 @@
-'use strict';
+import "react-select2-wrapper/css/select2.css";
 
-import React from "react"
+import React from "react";
+import Select2 from "react-select2-wrapper";
 
-import Form from "../availity-react/validation/Form.jsx";
-import Input from "../availity-react/validation/Input.jsx";
+import { Form, Input, globals } from "../availity-react";
 
-import Notice from "./components/Notice.jsx"
+import Notice from "./components/Notice.jsx";
 
 export default class Registration extends React.Component {
 
@@ -61,22 +61,25 @@ export default class Registration extends React.Component {
 
                   <div className="form-group">
                     <label htmlFor="noIcon">Date of Birth</label>
-                    <input type="text"
+                    <Input type="date"
                            className="form-control"
-                           id="noIcon"
+                           id="dob"
+                           name="dob"
                            placeholder="When were you born?"
+                           validations="isDate"
+                           validationError="Date of Birth must be a valid date"
                     />
                   </div>
 
                   <div className="form-group">
                     <label htmlFor="dropdownStates1">Favorite State</label>
-                    <select
+                    <Select2
                       id="dropdownStates1"
                       className="form-control select2"
-                      data-placeholder="Select State"
-                      data-allow-clear="true">
-                      <option value=""/>
-                    </select>
+                      data={globals.REGIONS.map(i => { return { text: i.name, id: i.code }; })}
+                      options={{
+                        placeholder: "Select state"
+                      }} />
                   </div>
 
                 </div>

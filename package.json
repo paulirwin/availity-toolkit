@@ -53,6 +53,7 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-router": "^2.6.1",
+    "react-select2-wrapper": "^1.0.1-beta1",
     "select2": "^4.0.3",
     "tracekit": "^0.4.3",
     "validator": "^5.5.0",
