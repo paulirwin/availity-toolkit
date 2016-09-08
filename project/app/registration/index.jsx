@@ -4,7 +4,7 @@ import React from "react";
 import Select2 from "react-select2-wrapper";
 
 import {globals} from "../availity-react";
-import {AvForm, AvField, AvInput} from "availity-reactstrap-validation";
+import {AvForm, AvField, AvInput, AvFeedback, AvGroup} from "availity-reactstrap-validation";
 import {Button, FormGroup, Label, Row, Container, Breadcrumb, BreadcrumbItem} from "reactstrap";
 
 import Notice from "./components/Notice.jsx";
@@ -33,11 +33,11 @@ export default class Registration extends React.Component {
       <AvForm>
         <div className="panel panel-card">
           <div className="panel-body">
-            <Container fluid="true">
+            <Container fluid={true}>
               <Row>
                 <h3 className="subheader panel-header">User Profile</h3>
 
-                <FormGroup>
+                <AvGroup>
                   <Label for="name">
                     Name
                     <span className="inline-help"
@@ -52,36 +52,26 @@ export default class Registration extends React.Component {
                     name="name"
                     required
                     placeholder="Enter 1 letter to see validation in action"
-                    validations="isLength:2"
-                    validationError="Name must be at least 2 characters."
+                    minLength="2"
                   />
+                  <AvFeedback>Please enter at least 2 characters for the name field.</AvFeedback>
+                </AvGroup>
 
-                </FormGroup>
-
-                <FormGroup>
+                <AvGroup>
                   <Label for="noIcon">Date of Birth</Label>
                   <AvInput
                     type="date"
                     id="dob"
                     name="dob"
                     placeholder="When were you born?"
-                    validations="isDate"
-                    validationError="Date of Birth must be a valid date"
+                    required
                   />
-                </FormGroup>
+                  <AvFeedback>Please select a valid date.</AvFeedback>
+                </AvGroup>
 
-                <FormGroup>
-                  <Label for="dropdownStates1">Favorite State</Label>
-                  <Select2
-                    id="dropdownStates1"
-                    className="form-control select2"
-                    data={globals.REGIONS.map(i => {
-                      return {text: i.name, id: i.code};
-                    })}
-                    options={{
-                      placeholder: "Select state"
-                    }}/>
-                </FormGroup>
+                <AvField type="select" name="dropdownStates1" label="Favorite State" placeholder="Select state">
+                  {globals.REGIONS.map(i => <option value={i.code}>{i.name}</option>)}
+                </AvField>
               </Row>
             </Container>
           </div>
