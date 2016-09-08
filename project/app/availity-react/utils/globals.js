@@ -1,4 +1,4 @@
-const globals = {
+export const globals = {
   REGIONS: [
     {
       'name': 'Alabama',
@@ -206,5 +206,3 @@ const globals = {
     }
   ]
 };
-
-export default globals;
