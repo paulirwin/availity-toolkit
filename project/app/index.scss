@@ -1,0 +1,31 @@
+// BEFORE USING CUSTOM LESS/CSS PLEASE TRY AND LEVERAGE THE UIKIT
+// AS MUCH AS POSSIBLE
+//
+// EVERY TIME A CUSTOM STYLE IS CREATED AN ANGEL LOSES ITS WINGS
+$availity-font-path: '~availity-uikit/fonts';
+@import '~availity-uikit/scss/bootstrap';
+
+// These are specific to extra components no covered in uikit or reactstrap/validation
+.has-danger .Select-control {
+  border-color: #931b1d;
+  background-color: #fbcbc8;
+}
+
+.has-danger .is-open .Select-control {
+  background-color: #fff
+}
+
+.input-group-btn>.btn {
+  line-height: 1.4;
+}
+
+.Select .Select-menu-outer {
+  z-index: 5;
+}
+
+.rdtStatic.rdt {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  left: 0;
+}

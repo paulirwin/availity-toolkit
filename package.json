@@ -29,9 +29,9 @@
     }
   ],
   "scripts": {
-    "start": "node ./node_modules/availity-workflow/index.js start",
-    "tests": "node ./node_modules/availity-workflow/index.js start",
-    "lint": "node ./node_modules/availity-workflow/index.js start",
+    "start": "av start",
+    "tests": "av start",
+    "lint": "av start",
     "production": "cross-env NODE_ENV=production gulp av:release",
     "staging": "cross-env NODE_ENV=staging gulp av:release",
     "integration": "cross-env NODE_ENV=integration gulp av:release",
@@ -50,23 +50,17 @@
     "eslint-plugin-react": "^6.1.2"
   },
   "dependencies": {
-    "availity-reactstrap-validation": "^1.0.3",
+    "availity-reactstrap-validation": "^1.0.4",
     "availity-uikit": "file:../availity-uikit",
     "babel-polyfill": "^6.13.0",
-    "bootstrap": "^4.0.0-alpha.4",
-    "bootstrap-datepicker": "^1.6.1",
-    "jquery": "^2.2.0",
-    "jquery.inputmask": "^3.3.1",
-    "moment": "^2.14.1",
+    "classnames": "^2.2.5",
     "react": "^15.3.1",
     "react-addons-transition-group": "^15.3.1",
+    "react-datetime": "github:TheSharpieOne/react-datetime#35f176724f",
     "react-dom": "^15.3.1",
     "react-router": "^2.6.1",
-    "react-select2-wrapper": "^1.0.1-beta1",
+    "react-select": "^1.0.0-rc.1",
     "reactstrap": "^3.0.1",
-    "select2": "^4.0.3",
-    "tracekit": "^0.4.3",
-    "validator": "^5.5.0",
-    "velocity-animate": "^1.2.3"
+    "tracekit": "^0.4.3"
   }
 }

@@ -1,11 +1,7 @@
-'use strict';
-
-require('./index.less');
-
-import "jquery"
 import React from "react"
 import ReactDOM from "react-dom"
 import { Router, Route, hashHistory } from "react-router"
+import "./index.scss";
 
 import Registration from "./registration/index.jsx"
 
