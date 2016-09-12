@@ -1,8 +1,6 @@
 import React from "react";
-import AvSelect from "../availity-react/AvSelect";
-import AvDate from "../availity-react/AvDate";
 
-import {globals} from "../availity-react";
+import {globals, AvDate, AvSelect} from "../availity-react";
 import {AvForm, AvField, AvInput, AvFeedback, AvGroup} from "availity-reactstrap-validation";
 import {Tooltip, Button, FormGroup, Label, Row, Container, Breadcrumb, BreadcrumbItem} from "reactstrap";
 

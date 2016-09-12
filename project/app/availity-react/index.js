@@ -1,9 +1,9 @@
 import globals from "./utils/globals";
-import Form from "./validation/Form.jsx";
-import Input from "./validation/Input.jsx";
+import AvDate from "./AvDate";
+import AvSelect from "./AvSelect";
 
 export {
   globals,
-  Form,
-  Input
+  AvDate,
+  AvSelect
 };
