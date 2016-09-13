@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "availity-ekko": "^1.3.0",
-    "availity-workflow": "file:../availity-workflow",
+    "availity-workflow": "github:availity/availity-workflow#feature/v2",
     "babel-plugin-transform-class-properties": "^6.11.5",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
@@ -47,11 +47,12 @@
     "cross-env": "1.0.7",
     "eslint": "^3.0.0",
     "eslint-config-availity": "^2.0.0-beta.10",
-    "eslint-plugin-react": "^6.1.2"
+    "eslint-plugin-react": "^6.1.2",
+    "postcss-loader": "^0.13.0"
   },
   "dependencies": {
     "availity-reactstrap-validation": "^1.0.4",
-    "availity-uikit": "file:../availity-uikit",
+    "availity-uikit": "github:availity/availity-uikit#feature/v3",
     "babel-polyfill": "^6.13.0",
     "classnames": "^2.2.5",
     "react": "^15.3.1",
