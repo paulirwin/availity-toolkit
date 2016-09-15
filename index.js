@@ -1,8 +1,10 @@
-var Ekko = require('availity-ekko');
+'use strict';
 
-var developerConfig = require('./project/config/developer-config');
+const Ekko = require('availity-ekko');
 
-var ekko = new Ekko();
+const developerConfig = require('./project/config/developer-config');
+
+const ekko = new Ekko();
 ekko.start(developerConfig);
 
 

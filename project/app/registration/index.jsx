@@ -22,7 +22,7 @@ export default class Registration extends React.Component {
           <a href="#">Spaces</a>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          My Application
+          Toolkit
         </BreadcrumbItem>
       </Breadcrumb>
       <h1>

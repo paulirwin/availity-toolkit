@@ -1,6 +1,8 @@
-var path = require('path');
+'use strict';
 
-var developerConfig = {
+const path = require('path');
+
+const developerConfig = {
 
   development: {
 
